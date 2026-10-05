@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign in</title><link rel="stylesheet" href="/static/style.css"></head>
+<body data-page="login">
+<div class="panel login">
+  <h1 id="app-name">Drawing Parser</h1>
+  <div class="tag" id="app-tag"></div>
+  <form id="login-form">
+    <label for="u">Username</label><input id="u" name="username" autocomplete="username" required autofocus>
+    <label for="p">Password</label><input id="p" name="password" type="password" autocomplete="current-password" required>
+    <button class="btn" type="submit">Sign in</button>
+    <div id="msg" class="msg"></div>
+  </form>
+</div>
+<script src="/static/app.js"></script>
+</body></html>

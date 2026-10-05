@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Batch</title><link rel="stylesheet" href="/static/style.css"></head>
+<body data-page="batch">
+<header class="top" id="top"></header>
+<main>
+  <div class="bar">
+    <h1 style="margin:0">Results</h1><span class="spacer"></span>
+    <a class="btn" id="download" href="#">Download Excel</a>
+  </div>
+  <div id="rejected"></div>
+  <div class="progress"><div id="bar"></div></div>
+  <div class="muted" id="progress-text" style="margin:-8px 0 14px"></div>
+  <div class="counts" id="counts"></div>
+  <div class="split">
+    <div class="panel" style="overflow:auto"><table>
+      <thead><tr><th>File</th><th>Status</th><th>Drawing no.</th><th>Name</th><th>Ltr</th><th>Size</th><th>Cage code</th></tr></thead>
+      <tbody id="rows"></tbody></table></div>
+    <div class="panel detail" id="detail"></div>
+  </div>
+</main>
+<script src="/static/app.js"></script>
+</body></html>

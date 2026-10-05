@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drawing Parser</title><link rel="stylesheet" href="/static/style.css"></head>
+<body data-page="index">
+<header class="top" id="top"></header>
+<main>
+  <h1>Upload drawings</h1>
+  <div class="drop" id="drop"><strong>Drop PDF drawings here</strong> or click to choose files
+    <div class="msg" id="msg"></div></div>
+  <input type="file" id="file" accept="application/pdf,.pdf" multiple hidden>
+
+  <h1 style="margin-top:28px">Batch history</h1>
+  <div class="panel"><table>
+    <thead><tr><th>Batch</th><th>Progress</th><th>Defense</th><th>Non defense</th><th>Needs review</th><th>Failed</th><th>Created</th></tr></thead>
+    <tbody id="batches"></tbody></table></div>
+</main>
+<script src="/static/app.js"></script>
+</body></html>

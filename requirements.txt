@@ -1,0 +1,36 @@
+# Engineering drawing classification & extraction pipeline
+# Pinned to the versions this pipeline was built and tested against.
+#
+#   pip install -r requirements.txt
+#
+# See README.md for the PaddleOCR first-run model download, which is the one and
+# only time anything in this pipeline touches the internet.
+
+# --- PDF reading and rasterising ---------------------------------------------
+pdfplumber==0.11.10
+pdfminer.six==20260107        # pdfplumber's text-extraction backend
+pillow==12.3.0                # pdfplumber's page.to_image() backend
+
+# --- OCR ----------------------------------------------------------------------
+paddleocr==3.7.0
+paddlepaddle==3.3.1           # CPU build; pulled in by paddleocr
+paddlex==3.7.2                # paddleocr's inference layer
+
+# --- Image preprocessing (deskew, contrast, binarize, upscale, line detect) ---
+opencv-python==4.13.0.92
+numpy==2.3.5
+
+# --- Excel output (Script B) ---------------------------------------------------
+openpyxl==3.1.5
+
+# --- Web platform (dp_platform/) -------------------------------------------------
+fastapi==0.115.6
+uvicorn==0.34.0
+python-multipart==0.0.32      # file uploads
+itsdangerous==2.2.0           # signed session cookies
+
+# --- DEVELOPMENT ONLY ----------------------------------------------------------
+# Needed solely by make_test_drawings.py, which generates the synthetic test
+# batch. The production pipeline (Script A and Script B) never imports it, so
+# this line can be dropped on the client laptop.
+reportlab==5.0.1

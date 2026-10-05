@@ -1,0 +1,13 @@
+filename,drawing_number,defense_classification,fake_itar_status,notes
+01_bracket_assembly.pdf,AC-41207-B,NON_DEFENSE,NON_ITAR,plain baseline drawing
+02_defense_housing.pdf,AC-55810-C,DEFENSE,ITAR,carries "PRODUCT FOR DEFENSE" stamp
+03_classified_manifold.pdf,AC-60934-A,DEFENSE,ITAR,carries "CLASSIFIED" stamp
+04_only_for_listed.pdf,AC-33115-D,DEFENSE,ITAR,"Only for <listed company>" statement
+05_only_for_reference.pdf,AC-22640-A,NON_DEFENSE,NON_ITAR,benign "only for reference" wording; must not fire
+08_topleft_stacked_block.pdf,VD-9004-2,NON_DEFENSE,NON_ITAR,different label wording/position; proves label-driven extraction
+09_scan_handdrawn_shaft.pdf,HD-1042,NON_DEFENSE,NON_ITAR,scanned/OCR path; no defense stamp
+10_scan_defense_valve.pdf,HD-2077,DEFENSE,ITAR,scanned/OCR path; carries "PRODUCT FOR DEFENSE" stamp
+
+# Drawing number used to test the "not found in portal" / NEEDS_REVIEW path.
+# It does not correspond to any PDF here -- feed it directly to the stub portal.
+ZZ-00000-X,,,NOT_FOUND,drawing number the stub portal has no record of
